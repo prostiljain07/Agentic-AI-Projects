@@ -1,0 +1,20 @@
+# Virtual Environment
+venv/
+customer-feedback-analyzer/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# Database
+*.db
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db

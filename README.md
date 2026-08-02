@@ -1,41 +1,65 @@
 # 🤖 Agentic AI Projects
 
-A collection of hands-on **Agentic AI** applications built using modern AI frameworks, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and intelligent automation techniques.
+A collection of hands-on **Agentic AI** applications built using modern AI frameworks, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), AI Agents, and intelligent automation techniques.
+
+Each project demonstrates a real-world use case, covering AI agents, vector databases, semantic search, text-to-SQL, tool calling, and conversational AI.
 
 ---
 
-## 🚀 Projects
+# 🚀 Projects
 
-### 🛒 Shopping Agent
-An AI-powered shopping assistant that helps users search, compare, and purchase products.
+## 🛒 Shopping Agent
 
-**Features**
+An AI-powered shopping assistant that helps users search, compare, and discover products using natural language.
+
+### Features
+
 - AI-powered product search
 - Tool Calling
-- Product ratings and reviews
+- Product recommendations
+- Product ratings & reviews
 - SQLite database integration
-- Groq + Gemini integration
+- Groq + Google Gemini integration
 - Natural language shopping experience
+
+**Tech Stack**
+
+- LangChain
+- Groq
+- Google Gemini
+- SQLite
 
 ---
 
-### 💬 Customer Feedback Analyzer
-An AI application that analyzes customer feedback and generates actionable insights.
+## 💬 Customer Feedback Analyzer
 
-**Features**
+An AI application that analyzes customer feedback and generates actionable business insights.
+
+### Features
+
 - Customer feedback analysis
 - Sentiment analysis
 - AI-generated summaries
 - Recommendation generation
-- Data visualization ready
+- Business insights
+- Visualization-ready outputs
+
+**Tech Stack**
+
+- LangChain
+- Groq
+- Pandas
+- Python
 
 ---
 
-### 📡 Telecom Chatbot Using RAG
-A Retrieval-Augmented Generation (RAG) chatbot that answers telecom customer queries using multiple knowledge sources.
+## 📡 Telecom Chatbot Using RAG
 
-**Features**
-- Multi-source Retrieval-Augmented Generation (RAG)
+A Retrieval-Augmented Generation (RAG) chatbot that answers telecom customer queries using multiple enterprise knowledge sources.
+
+### Features
+
+- Multi-source RAG Pipeline
 - FAQ retrieval from CSV
 - Telecom User Guide retrieval from PDF
 - Resolved ticket retrieval from SQLite
@@ -46,63 +70,107 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers telecom customer que
 - Groq LLM Integration
 - Context-aware responses
 
+### Knowledge Sources
+
+- FAQ Database (CSV)
+- Telecom User Guide (PDF)
+- Support Tickets (SQLite)
+
+**Tech Stack**
+
+- LangChain
+- ChromaDB
+- HuggingFace Embeddings
+- Groq
+- SQLite
+
 ---
 
-## 🛠 Tech Stack
+## 📊 SQL Agent
+
+An AI-powered SQL Assistant that converts natural language into SQL queries, executes them against a SQLite database, and explains the results in business-friendly language.
+
+### Features
+
+- Natural Language → SQL
+- AI-generated SQL Queries
+- SQLite Database
+- Automatic Schema Detection
+- SQL Validation
+- Business-friendly Explanations
+- Streamlit Chat Interface
+- Conversation History
+- Safe Read-only SQL Execution
+
+**Tech Stack**
+
+- LangChain
+- Groq
+- SQLite
+- Pandas
+- Streamlit
+
+---
+
+# 🛠 Tech Stack
 
 - Python
 - LangChain
 - LangGraph
 - Google Gemini
 - Groq
-- Hugging Face
+- HuggingFace Embeddings
 - ChromaDB
 - SQLite
 - Pandas
-- FastAPI
 - Streamlit
+- FastAPI
 
 ---
 
-## 📚 AI Concepts Demonstrated
+# 📚 AI Concepts Demonstrated
 
 - Agentic AI
+- AI Agents
 - Retrieval-Augmented Generation (RAG)
-- Vector Databases
-- Semantic Search
+- Text-to-SQL
 - Tool Calling
 - Prompt Engineering
 - Embeddings
+- Vector Databases
+- Semantic Search
 - LLM Integration
 - Document Processing
+- Conversational AI
 - AI Workflow Automation
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 Agentic-AI-Projects/
 │
 ├── Customer_Feedback_Analyzer/
 ├── Shopping_Agent/
+├── SQL_Agent/
 ├── Telecom_Chatbot_UsingRAG/
 │
 ├── README.md
-├── requirements.txt
 ├── pyproject.toml
-├── .env.example
-└── .gitignore
+├── uv.lock
+├── .gitignore
+└── .env.example
 ```
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/Agentic-AI-Projects.git
+git clone https://github.com/<your-github-username>/Agentic-AI-Projects.git
 ```
 
 Navigate to the project:
@@ -111,13 +179,13 @@ Navigate to the project:
 cd Agentic-AI-Projects
 ```
 
-Create a virtual environment:
+Install project dependencies:
 
 ```bash
-python -m venv .venv
+uv sync
 ```
 
-Activate the environment:
+Activate the virtual environment:
 
 **Windows**
 
@@ -125,27 +193,41 @@ Activate the environment:
 .venv\Scripts\activate
 ```
 
-Install dependencies:
+Run any project.
+
+Example:
 
 ```bash
-pip install -r requirements.txt
-```
+cd SQL_Agent
 
-or, if using `pyproject.toml`:
-
-```bash
-pip install .
+streamlit run app.py
 ```
 
 ---
 
-## 🎯 Future Projects
+# 🎯 Upcoming Projects
 
+- 🩺 Medical Report Analyzer
 - 📄 Resume Analyzer
-- 📊 SQL Agent
 - ✈️ Travel Planner
 - 🤖 Multi-Agent Workflow
 
 ---
 
-⭐ This repository is a growing portfolio of real-world **Agentic AI** projects showcasing modern LLM applications, RAG pipelines, tool calling, vector databases, and intelligent automation using Python.
+# ⭐ About This Repository
+
+This repository is a growing portfolio of practical **Agentic AI** applications showcasing modern AI engineering concepts, including:
+
+- AI Agents
+- Retrieval-Augmented Generation (RAG)
+- Text-to-SQL
+- Tool Calling
+- Vector Databases
+- Semantic Search
+- LLM Applications
+- Streamlit AI Apps
+- Intelligent Automation
+
+Each project is built with a focus on real-world business use cases, clean code, and production-oriented architecture.
+
+If you find this repository useful, please consider giving it a ⭐.
